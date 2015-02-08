@@ -17,8 +17,8 @@
   "content_scripts": [
    {
      "css":        ["adjust.css"],
-	 "js":         ["actions.js"],
-	 "matches":    ["https://www.student.cs.uwaterloo.ca/~cs136/seashell/frontend.html/*"]
+     "js":         ["actions.js"],
+     "matches":    ["https://www.student.cs.uwaterloo.ca/~cs136/seashell/frontend.html/*"]
       
    }
 	],
