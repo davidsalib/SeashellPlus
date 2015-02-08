@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Seashell+",
+  "description": "This extension adds some useful features to Seashell (BETA)",
+  "version": "1.0",
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+  "content_scripts": [
+   {
+     "css":        ["adjust.css"],
+	 "js":         ["actions.js"],
+	 "matches":    ["https://www.student.cs.uwaterloo.ca/~cs136/seashell/frontend.html/*"]
+      
+   }
+	],
+	"web_accessible_resources": [
+      "adjust.css"
+	]
+	
+}

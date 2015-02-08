@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.col-md-6 {
+	width: 100% !important;
+}
+
+
+pre{
+	width: auto; 
+}
+
+.tooLong {
+	background-color: #FFDAD8 !important; 
+}
+
+
+.CodeMirror-matchingbracket {
+	outline: none !important; 
+	color: #00A8FF !important;
+	box-shadow: 0px 0px 5px grey;	
+}
