@@ -1,8 +1,10 @@
 <!doctype html>
 <!--
- This page is shown when the extension button is clicked, because the
+This page is shown when the extension button is clicked, because the
  "browser_action" field in manifest.json contains the "default_popup" key with
  value "popup.html".
+
+The popup adds no functionality to the extension, simply provides information and details.
  -->
 <html>
   <head>
@@ -27,18 +29,19 @@
     </style>
 
     <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-     -->
+      - JavaScript and HTML must be in separate files due to Chrome Extension security requirements    
+    -->
     <script src="popup.js"></script>
   </head>
+
   <body>
-    <p>This Chrome extension will enhance Seashell to allow you to use the Code window in full width and give line warnings at 80 characters. Enjoy!</p>
-    <p>Developed by: David Salib (<a target="_blank" href='mailto:davidsalib.com'>me@davidsalib.com</a>)</p>
-    <p>Version 0.1</p>
-    
+    <h2>Features: </h2>
+    <ul>
+     <li>Line length warnings at 80 characters</li>
+     <li>Full width coding area and console</li>
+     <li>Improved closing brace highlightening</li>
+    </ul>
+    <p>Developed by: David Salib (<a target="_blank" href='mailto:davidsalib.com'>me@davidsalib.com</a>)</p>  
   </body>
 </html>
 
