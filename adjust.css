@@ -1,20 +1,22 @@
 @charset "UTF-8";
-/* CSS Document */
 
+// Allows full screen of CodeMirror and Console since the
+// console doesn't have a unique ID
 .col-md-6 {
 	width: 100% !important;
 }
 
-
+// Resizes pre to fit new window width
 pre{
 	width: auto; 
 }
 
+// Class applied to a pre by javascript when the content is over 80 characters
 .tooLong {
 	background-color: #FFDAD8 !important; 
 }
 
-
+// Changes the styling of the bracket close so that the cursor isn't hidden
 .CodeMirror-matchingbracket {
 	outline: none !important; 
 	color: #00A8FF !important;
