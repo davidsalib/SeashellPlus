@@ -1,6 +1,5 @@
 // JavaScript Document
 window.onkeyup = getActiveHTMLElement;
-// git 
 function getActiveHTMLElement(keyevent) {
   keyevent = (keyevent) ? keyevent : ((window.event) ? event : null);
   if (keyevent) {
