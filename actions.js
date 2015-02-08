@@ -1,10 +1,12 @@
 // JavaScript Document
 window.onkeyup = getActiveHTMLElement;
+
 function getActiveHTMLElement(keyevent) {
   keyevent = (keyevent) ? keyevent : ((window.event) ? event : null);
   if (keyevent) {
 
    var pres = document.getElementsByTagName("pre");
+		
 		for(var i = 0; i < pres.length; i++){
 		   if(pres[i].innerText.length > 80){
 		   		pres[i].setAttribute("class", "tooLong");
@@ -13,7 +15,7 @@ function getActiveHTMLElement(keyevent) {
 		   }
 		}
 		
-  }
+	}
  }
 	
 
